@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 
 setup(
-    name='automatic_couscous',
+    name='ivory-tower',
     version='0.0.0',
     description='deploying scanners with no effort',
     author='trevalkov',
