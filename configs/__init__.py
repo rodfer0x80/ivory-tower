@@ -1,1 +1,1 @@
-from lib.utils import *
+from configs.configs import *

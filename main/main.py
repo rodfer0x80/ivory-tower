@@ -1,7 +1,8 @@
-import lib
+import configs 
 
 
 def main():
+    print("main")
     exit(0)
 
 
