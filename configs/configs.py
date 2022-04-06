@@ -34,17 +34,11 @@ def parse_configs() -> str:
     return cmds[:-1].splitlines()
 
 
-def parse_args() -> str:
-    if len(sys.argv) != 2:
-        sys.stderr.write('parse_args: invalid length\n')
-        exit(1)
-    
-    return sys.argv[1]
+    return args[1]
 
 
-def parse_cmds() -> str:
+def parse_cmds(domain: str) -> str:
     cmds = parse_configs()
-    domain = parse_args()
     
     _cmds = list()
     for cmd in cmds:
