@@ -1,0 +1,2 @@
+#!/bin/sh
+./cleanup.py&&./build.py&&./run.py&&watch cat ivory-tower_cluster.log

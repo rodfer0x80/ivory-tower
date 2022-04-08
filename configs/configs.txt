@@ -1,10 +1,10 @@
-subdomains:
+report:
     github.com/projectdiscovery/subfinder:
         api keys:
             shodan:
                 TYSxB4t2MIxMBBQKvA5ViouuQR4Q9W
         cmd:
-            subfinder -d $domain -o subdomains/$domain_subfinder.txt
+            subfinder -d $domain -o report/$domain_subfinder.txt
     github.com/tomnomnom/assetfinder
         api keys:
             virus total:
@@ -12,7 +12,7 @@ subdomains:
             spyse:
                 07e35cba-59bc-47f7-bbae-f01a4eb86516
         cmd:
-            assetfinder $domain 1>> subdomains/$domain_assetfinder.txt
+            assetfinder $domain 1>> report/$domain_assetfinder.txt
     github.com/Edu4rdSHL/findomain
         api keys:
             virus total:
@@ -20,10 +20,10 @@ subdomains:
             spyse:
                 07e35cba-59bc-47f7-bbae-f01a4eb86516
         cmd:
-            findomain -t $domain 1>> subdomains/$domain_findomain.txt
+            findomain -t $domain 1>> report/$domain_findomain.txt
 
     unix_sort:
         cmd:
-            for f in `ls subdomains`;do cat subdomains/$f >> subdomains/_$rsrc.txt; done; sort -u subdomains/_$rsrc.txt > subdomains/$rsrc.txt; rm -f subdomains/_$rsrc.txt
+            for f in `ls report`;do cat report/$f >> report/_$rsrc.txt; done; sort -u report/_$rsrc.txt > report/$rsrc.txt; rm -f report/_$rsrc.txt
 
 

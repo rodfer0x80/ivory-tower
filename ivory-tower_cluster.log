@@ -1,0 +1,18 @@
+Instance e9922b130d0bb28a started
+docker run -d --rm alpine:7 -c / 'bin/bash subfinder -d example.com -o report/example.com_subfinder.txt' --volume ./report:/report
+Instance e9922b130d0bb28a stopped
+Instance 7fe079ad4974baf1 started
+docker run -d --rm alpine:7 -c / 'bin/bash assetfinder example.com 1>> report/example.com_assetfinder.txt' --volume ./report:/report
+Instance 7fe079ad4974baf1 stopped
+Instance 7443ddcb273258b2 started
+docker run -d --rm alpine:7 -c / 'bin/bash findomain -t example.com 1>> report/example.com_findomain.txt' --volume ./report:/report
+Instance 7443ddcb273258b2 stopped
+Instance 1f6651dc9cc27287 started
+docker run -d --rm alpine:7 -c / 'bin/bash subfinder -d example.com -o report/example.com_subfinder.txt' --volume ./report:/report
+Instance 1f6651dc9cc27287 stopped
+Instance c1093884ec92f026 started
+docker run -d --rm alpine:7 -c / 'bin/bash assetfinder example.com 1>> report/example.com_assetfinder.txt' --volume ./report:/report
+Instance c1093884ec92f026 stopped
+Instance fd692c9f3176f5c8 started
+docker run -d --rm alpine:7 -c / 'bin/bash findomain -t example.com 1>> report/example.com_findomain.txt' --volume ./report:/report
+Instance fd692c9f3176f5c8 stopped

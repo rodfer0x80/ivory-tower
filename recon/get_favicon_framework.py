@@ -30,7 +30,7 @@ def get_favicon_framework(host, owasp_favicon_db="./owasp_favicon_db.txt"):
     try:
         db = unpack_txt_db(owasp_favicon_db)
     except FileNotFoundError:
-        sys.stderr.write("[get_favicon_framework] File not found at {owasp_favicon_db}")
+        sys.stderr.write(f"[get_favicon_framework] File not found at {owasp_favicon_db}")
         exit(1)
     
     try:
