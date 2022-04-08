@@ -1,3 +1,0 @@
-[console_scripts]
-mainpy = main.main:main
-testpy = test.test:test

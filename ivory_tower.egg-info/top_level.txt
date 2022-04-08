@@ -1,5 +1,0 @@
-autodiscovery
-configs
-main
-recon
-test
